@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Modelos de Desarrollo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Modelos de Desarrollo de Software</h1>
+        <a href="index.html" class="button-volver">Volver al inicio</a>
+    </header>
+
+    <section id="contente">
+        <h2>Modelo en Cascada (Waterfall)</h2>
+        <p>"El modelo en cascada es una metodología de desarrollo de software tradicional, lineal y secuencial donde cada fase (requisitos, diseño, implementación, pruebas, despliegue) debe completarse totalmente antes de iniciar la siguiente. Se caracteriza por una documentación exhaustiva y es ideal para proyectos con objetivos y requisitos muy claros y fijos desde el inicio."</p>
+        <h2>historia</h2>
+        <p>El modelo en cascada es considerado el enfoque más antiguo en la ingeniería de software. Aunque sus bases provienen de la ingeniería de sistemas de los años 50 y de la construcción de grandes infraestructuras (donde no puedes cambiar los cimientos una vez levantado el edificio), su hito histórico principal es:
+
+        <p>Winston Royce (1970): Publicó el artículo "Managing the Development of Large Software Systems". En él, Royce describió una serie de etapas secuenciales.</p>
+
+Royce presentó este modelo como un ejemplo de proceso arriesgado y propenso al fallo si no se incluían ciclos de retroalimentación. Sin embargo, la industria adoptó la versión más simple y lineal (sin retroalimentación) por su facilidad para la gestión administrativa.
+
+ En la década de los 80, el Departamento de Defensa de los Estados Unidos lo estandarizó (DOD-STD-2167), lo que obligó a casi todas las empresas de software de la época a utilizarlo.</p>
+ <h2>características</h2>
+ <p>
+    Este modelo se distingue por su naturaleza estática y jerárquica. Sus rasgos distintivos son:</p>
+
+<p>*Secuencialidad Estricta: El proyecto avanza de forma lineal. Como una cascada real, el agua (el progreso) solo cae hacia abajo; es casi imposible que suba.</p>
+
+<p>*Fases Adyacentes: Cada etapa debe completarse al 100% y producir un entregable firmado antes de que la siguiente pueda comenzar.</p>
+
+<p>*Documentación Exhaustiva: Se pone un énfasis masivo en los documentos (manuales de requisitos, documentos de diseño, planes de prueba). El "progreso" se mide por documentos completados.</p>
+
+<p></p>*Roles Especializados: Los analistas trabajan al principio, los diseñadores después, los programadores en el medio y los testers al final. Rara vez colaboran al mismo tiempo.</p>
+<h2>ventajas</h2>
+<p>A pesar de las críticas actuales, el modelo sigue teniendo beneficios en contextos específicos:
+
+<p></p>*Simplicidad de Gestión: Al tener fechas de inicio y fin claras para cada fase, es muy fácil para los gerentes planificar presupuestos y cronogramas.
+
+*Hitos Definidos: Proporciona puntos de control claros. Es fácil saber si el proyecto está "al 50%" de su camino.
+
+*Disciplina y Orden: Obliga a pensar antes de actuar. El diseño debe estar listo antes de programar, lo que evita improvisaciones.
+
+*Transferencia de Conocimiento: Debido a la documentación masiva, si un desarrollador abandona el proyecto, otro puede entender qué se hizo leyendo los documentos.
+
+*Ideal para Proyectos Estables: Funciona muy bien cuando los requisitos son fijos y no cambiarán (ej. software para hardware específico o regulaciones legales).</p>
+<h2>Desventajas</h2>
+<p>Es el modelo con más riesgos en el desarrollo de software moderno:
+
+*Resistencia al Cambio: Si el cliente se da cuenta de que olvidó un requisito importante a mitad de la fase de programación, los costes para volver atrás y rediseñar son prohibitivos.
+
+*Efecto Túnel: El cliente no ve nada tangible hasta casi el final del proyecto. Esto genera ansiedad y riesgo de que el producto final no sea lo que el cliente esperaba.
+
+*Riesgo Acumulado al Final: Las pruebas se realizan al último. Si hay un error de diseño fundamental, se descubre cuando ya se ha gastado casi todo el presupuesto.
+
+*Falsa Sensación de Progreso: Se puede tener el 100% de la documentación lista (50% del tiempo), pero tener 0 líneas de código funcional.
+
+*Inactividad de Recursos: Los programadores tienen que esperar a que los analistas terminen, creando cuellos de botella y tiempos muertos.</p>
+
+
+        
+
+        <h2>Modelo en Espriral</h2>
+        <p>"El modelo en espiral es un enfoque de desarrollo de software centrado en la gestión de riesgos y la iteración continua, diseñado por Barry Boehm en 1986. Combina elementos del modelo en cascada y prototipado, estructurando el proyecto en ciclos repetitivos (espirales) que evalúan y mitigan riesgos en cada fase."</p>
+        <h2>Historia</h2>
+        <p>El modelo fue propuesto por Barry Boehm en 1986 en su artículo "A Spiral Model of Software Development and Enhancement".
+
+A mediados de los 80, los proyectos de software se volvían masivos y críticos (sistemas espaciales, militares o bancarios). El modelo en Cascada fallaba porque no gestionaba la incertidumbre. Boehm introdujo una idea revolucionaria: el desarrollo no debe ser una línea, sino un ciclo que se expande, donde cada vuelta sirve para reducir el riesgo del proyecto.</p>
+<h2>Caracteristicas</h2>
+<p>A diferencia de otros modelos, el Espiral no se mide solo por fases terminadas, sino por el nivel de riesgo gestionado. Su estructura se divide en cuatro cuadrantes por los que el proyecto pasa en cada iteración:</p>
+
+<p>*Planificación (Determinación de objetivos): Se definen las metas de esa fase, las alternativas y las restricciones.</p>
+
+<p>*Análisis de Riesgos: Se evalúan las alternativas y se identifican los riesgos técnicos o de gestión. Es aquí donde se suelen crear prototipos para probar si una idea funcionará.</p>
+
+<p>*Ingeniería (Desarrollo y Pruebas): Se escribe el código y se prueba. Dependiendo del riesgo, esta parte puede seguir un modelo de Cascada, Incremental o Prototipado.</p>
+
+<p>*Evaluación: El cliente revisa lo hecho hasta el momento. Si todo es correcto, se planea la siguiente vuelta de la espiral.</p>
+<h2>ventajas</h2>
+<p>Es considerado el modelo más "inteligente" para proyectos complejos:
+
+*Gestión de Riesgos Superior: Es su mayor fortaleza. Los problemas graves se detectan y resuelven en las primeras vueltas, antes de invertir millones.
+
+*Flexibilidad: Permite incorporar cambios y nuevas funcionalidades en cada nueva iteración (vuelta).
+
+*Software Temprano: Gracias al uso de prototipos en el cuadrante de riesgos, el cliente puede ver "maquetas" funcionales mucho antes que en el modelo en Cascada.
+
+*Control de Calidad: Al incluir evaluaciones del cliente y pruebas en cada ciclo, el producto final suele ser muy robusto y ajustado a la realidad.</p>
+<h2>Desventajas</h2>
+<p>Su complejidad lo hace poco apto para todo tipo de equipos:
+
+<p>*Costo Elevado: Requiere mucho tiempo de gestión y reuniones. No es rentable para proyectos pequeños.</p>
+
+<p>*Dependencia de Expertos: El éxito del modelo depende totalmente de que el equipo sepa identificar riesgos. Si el analista no ve un riesgo crítico, el modelo falla.</p>
+
+<p>*Complejidad Administrativa: Es difícil de explicar a clientes que quieren un presupuesto y una fecha de entrega fija desde el primer día.</p>
+
+<p>*Puede ser Infinito: Si no se establecen hitos claros, el proyecto puede seguir dando vueltas en la espiral sin llegar nunca a una versión final definitiva.</p>
+
+
+
+        <h2>Modelo de Incremental</h2>
+        <p>"El modelo de incremental es una metodología de desarrollo de software donde el producto se desarrolla en etapas incrementales, entregando funcionalidades adicionales en cada iteración. Permite una mejor gestión de riesgos y una mayor flexibilidad en la adaptación a cambios en los requisitos del cliente."</p>
+        <h2>Historia</h2>
+        <p>El concepto de desarrollo incremental no tiene un único "inventor", pero comenzó a ganar fuerza a principios de los años 80 como respuesta a los fallos de los proyectos monolíticos (aquellos que se entregaban de un solo golpe).
+
+En esa época, se hizo evidente que esperar dos años para ver un software terminado era inviable. El modelo incremental propuso que el software se construyera como un edificio de apartamentos: primero se hace la estructura básica y luego se van habilitando los pisos uno por uno para que la gente pueda mudarse mientras se termina el resto.</h2>
+
+<h2>Características</h2> 
+        <p>En este modelo, el sistema se divide en varios componentes o módulos, cada uno de los cuales se diseña y construye de forma separada:</p>
+
+<p>Entrega por etapas: El software se entrega al cliente en "incrementos" funcionales. El primer incremento suele ser el núcleo o la función esencial del programa.</p>
+
+Secuencialidad por módulo: Cada incremento pasa por su propio ciclo de análisis, diseño, codificación y pruebas.</p>
+
+Acumulativo: Cada versión nueva se suma a la anterior hasta completar el sistema total.</p>
+
+<p>Priorización: El cliente y el equipo deciden qué funciones son más importantes para desarrollarlas en los primeros incrementos.</p>
+
+<p>Ejemplo de flujo:</p>
+<p>Incremento 1: Sistema de registro y login (Funcionalidad básica).<p/>
+
+<p>Incremento 2: Gestión de perfiles y carga de datos.</p>
+
+<p>Incremento 3: Módulo de reportes y estadísticas.</p>
+
+<h2>Ventajas</h2>
+<p>Es un modelo muy bien valorado por los clientes porque reduce la incertidumbre:<p/>
+
+<p>Entrega de Valor Temprano: El cliente puede empezar a usar las funciones básicas del programa mucho antes de que el proyecto completo esté terminado.<p/>
+
+<p>Flexibilidad en Prioridades: Si el presupuesto se agota, el cliente al menos se queda con una versión funcional que tiene las partes más importantes.<p/>
+
+<p>Reducción de Riesgos: Es más fácil probar y encontrar errores en un módulo pequeño que en un sistema gigante.<p/>
+
+<p>Retroalimentación Real: El usuario puede dar su opinión sobre el primer incremento, lo que ayuda a mejorar los incrementos futuros.<p/>
+
+ <h2>Desventajas</h2>
+<p>Aunque parece ideal, tiene retos técnicos importantes:<p/>
+
+<p>Dificultad Arquitectónica: Requiere que los ingenieros diseñen una estructura muy sólida al principio para asegurar que los módulos futuros "encajen" sin romper los anteriores.<p/>
+
+<p>Costo de Integración: A medida que se añaden piezas, el proceso de integrarlas y probar que todo funcione en conjunto se vuelve más complejo.<p/>
+
+<p>No apto para sistemas indivisibles: Algunos sistemas no se pueden separar por partes (por ejemplo, el núcleo de un sistema operativo), lo que hace imposible aplicar este modelo.<p/>
+
+<p>Planificación Crítica: Si no se definen bien las interfaces entre módulos desde el día uno, el proyecto puede terminar siendo un rompecabezas cuyas piezas no encajan.<p/>
+    </section>
+
+    <footer>
+    </footer>
+
+</body>
+</html>

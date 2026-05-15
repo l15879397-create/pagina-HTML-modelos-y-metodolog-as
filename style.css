@@ -1,0 +1,160 @@
+body {
+    background-color: rgba(52, 37, 190, 0.911);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#container {
+    width: 1100px;
+    padding: 0px ;
+    padding-top: 20px;
+    margin: 0 auto;
+    background-color: #39A900;
+}
+
+
+header {
+    background-color:#39A900;
+    height: 100px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+}
+
+
+nav {
+    background-color: #39A900; 
+    height: 50px;
+    border-bottom: 1px solid black;
+}
+
+nav ul li {
+    float: left;
+    list-style: none;
+    margin: 10px;
+    line-height: 30px;
+}
+
+
+.clear-fix {
+    clear: both;
+}
+
+
+#content {
+    float: left;
+    width: calc(80% - 80px); 
+    min-height: 500px;
+    background-color: rgb(177, 43, 43);
+    padding: 150px; 
+}
+#contente{
+    display: flex;
+    flex-direction:column;
+    margin: 0 auto;
+    min-height: 100vh;
+    background-color: #505692;
+}
+
+
+aside {
+    float: left;
+    width: calc(20% - 20px); 
+    min-height: 500px;
+    background-color: orange;
+    padding: 10px;
+}
+
+
+.article {
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.article h2 {
+    font-size: 25px;
+}
+
+.article:first-child {
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+}
+
+footer {
+    background-color: rgb(187, 204, 154);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+
+}
+nav {
+    height: 50px; 
+    background-color: lightblue;
+    position: relative; 
+    z-index: 100; 
+}
+
+
+.menu-principal > li {
+    float: left;
+    list-style: none;
+    position: relative; 
+}
+
+
+.submenu {
+    display: none;          
+    position: absolute;        
+    top: 100%;                
+    left: 0;
+    background-color: #444;    
+    width: 150px;              
+    list-style: none;
+}
+
+.submenu li {
+    width: 100%;              
+    border-bottom: 1px solid #93cf5b;
+}
+
+.submenu li a {
+    color: white;           
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    transition: background 0.3s ease, padding-left 0.3s ease; 
+}  
+.submenu li a:hover {
+    background-color: #ff4500; 
+    padding-left: 25px;      
+}
+
+
+
+.dropdown:hover .submenu {
+    display: block;            
+}
+
+.submenu li a:hover {
+    background-color: #98e237;
+}
+
+.button-volver {
+    padding: 8px 15px;
+    font-size: 14px;
+    background-color: #4ca571;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border-radius: 4px;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
